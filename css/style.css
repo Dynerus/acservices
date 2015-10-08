@@ -1,0 +1,112 @@
+html, body {
+    margin:0;
+    padding:0;
+    background: #333;
+    font-family: 'Raleway', sans-serif;
+}
+/* ============================== Main Styles ============================== */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: -5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================== Navigation Styles ============================== */
+nav {
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: background 300ms ease-in-out;
+}
+nav.active {
+    background: rgba(0,0,0,.5);
+    transition: background 300ms ease-in-out;
+}
+nav ul.navigation { float: left; }
+nav ul.language { float: right; padding-right: 20px;}
+nav ul li {}
+nav ul a.logo {
+    float: left;
+    display: inline-block;
+    height: 60px;
+    background: url(../img/logo.png) center center no-repeat;
+    background-size: 90%;
+    width: 150px;
+    margin-right: 0px;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 24px 20px 23px 20px;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 400ms ease-in-out;
+}
+nav ul li a:hover {
+    color: #29c890;
+    transition: background 400ms ease-in-out;
+}
+nav ul.language a {
+    padding: 24px 10px 23px 10px;
+}
+
+
+/* ============================== Header Styles ============================== */
+
+.header{
+    height: 600px;
+    background: #222 url(../img/slide.jpg)center center no-repeat;
+    
+  -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
+}
+
+.overlay{
+    width: 100%;
+    height: 600px;
+    background: url(../img/overlay.png);
+}
+
+/* ============================== About Content Styles ============================== */
+
+.c-about{
+    width: 80%;
+    height: 100%;
+    margin: 100px 10%;
+    background: #222;
+    padding: 30px 0;
+}
+
+.c-about h1{ text-align: center; padding: 10px 0; color: #f2f2f2}
+.c-about p { 
+    padding: 10px 100px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #f2f2f2;
+}
+
